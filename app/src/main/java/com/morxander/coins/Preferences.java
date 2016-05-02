@@ -1,4 +1,4 @@
-package com.nothingmagical.coins;
+package com.morxander.coins;
 
 import android.content.Context;
 import android.content.SharedPreferences;

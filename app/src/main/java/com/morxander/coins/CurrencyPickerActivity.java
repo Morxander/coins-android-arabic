@@ -1,4 +1,4 @@
-package com.nothingmagical.coins;
+package com.morxander.coins;
 
 import android.app.ListActivity;
 import android.os.Bundle;
