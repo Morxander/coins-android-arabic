@@ -21,6 +21,7 @@ public class EditBtcActivity extends Activity {
         setContentView(R.layout.activity_edit_btc);
 
         mTextField = (EditText) findViewById(R.id.textField);
+        ViewsUtility.changeTypeFace(getApplicationContext(),mTextField);
         mTextField.setText(Preferences.getBtcString(this));
         mTextField.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override

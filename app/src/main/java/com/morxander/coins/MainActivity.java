@@ -38,6 +38,7 @@ public class MainActivity extends Activity {
     protected TextView mValueLabel;
     protected TextView mBtcLabel;
     protected TextView mUpdatedAtLabel;
+    protected TextView howto;
     protected boolean mUpdating;
     protected Timer mTimer;
     protected Handler mHandler = new Handler() {
@@ -51,7 +52,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        howto = (TextView)findViewById(R.id.howto);
+        ViewsUtility.changeTypeFace(getApplicationContext(),howto);
         mValueLabel = (TextView) findViewById(R.id.valueLabel);
+        ViewsUtility.changeTypeFace(getApplicationContext(),mValueLabel);
         mValueLabel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,6 +65,7 @@ public class MainActivity extends Activity {
         });
 
         mBtcLabel = (TextView) findViewById(R.id.btcLabel);
+        ViewsUtility.changeTypeFace(getApplicationContext(),mBtcLabel);
         mBtcLabel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,6 +75,7 @@ public class MainActivity extends Activity {
         });
 
         mUpdatedAtLabel = (TextView) findViewById(R.id.updatedAtLabel);
+        ViewsUtility.changeTypeFace(getApplicationContext(),mUpdatedAtLabel);
         mUpdatedAtLabel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -135,7 +141,7 @@ public class MainActivity extends Activity {
         // BTC
         format = NumberFormat.getNumberInstance();
         format.setMaximumFractionDigits(10);
-        mBtcLabel.setText(format.format(btc) + " BTC");
+        mBtcLabel.setText(format.format(btc) + " بت كوين");
 
         // Updated at
         updateUpdatedAtLabel();

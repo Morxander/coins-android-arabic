@@ -16,7 +16,7 @@ public class Preferences {
 
     public static String getCurrencyCode(Context context) {
         SharedPreferences preferences = context.getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE);
-        return preferences.getString(KEY_CURRENCY, "USD");
+        return preferences.getString(KEY_CURRENCY, "EGP");
     }
 
     public static void setCurrencyCode(Context context, String code) {
@@ -32,7 +32,7 @@ public class Preferences {
 
     public static String getBtcString(Context context) {
         SharedPreferences preferences = context.getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE);
-        return preferences.getString(KEY_BTC, "0");
+        return preferences.getString(KEY_BTC, "1");
     }
 
     public static void setBtc(Context context, String number) {
