@@ -1,9 +1,13 @@
-# Coins for Android
+# BitCoin for Android Arabian Users
 
-A simple app to see how much your wallet is worth. It's like [Shares](http://getsharesapp.com) but for Bitcoin.
+This is a fork of [Coins for Android](https://github.com/nothingmagical/coins-android)
 
-This is my first Android app. Don’t laugh.
+I just translated the original Application and changed some colors, icons and fonts.
 
+Also I reordered the currencies to put the Arabian currencies in the top of the list.
+
+It's not my code to get credit for it and it's all [Nothing Magical](https://github.com/nothingmagical)'s work.
+ 
 
 ## Related Repos
 
